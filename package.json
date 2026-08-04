@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host --port 5173",
     "build": "vite build && npm run copy:static",
-    "copy:static": "mkdir -p dist/assets && cp -r assets/* dist/assets/ 2>/dev/null; cp robots.txt dist/ 2>/dev/null; cp sitemap.xml dist/ 2>/dev/null; echo 'Static assets copied to dist'",
+    "copy:static": "mkdir -p dist/assets/resume dist/assets/images/manash && cp -r assets/resume/* dist/assets/resume/ 2>/dev/null; cp -r assets/images/manash/* dist/assets/images/manash/ 2>/dev/null; cp robots.txt dist/ 2>/dev/null; cp sitemap.xml dist/ 2>/dev/null; echo 'Static assets copied to dist'",
     "preview": "vite preview --host --port 4173",
     "serve": "npx serve . -l 3000"
   },

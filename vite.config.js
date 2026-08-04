@@ -1,26 +1,29 @@
 import { defineConfig } from 'vite';
-import { resolve, dirname } from 'path';
-import { existsSync, mkdirSync, cpSync, statSync } from 'fs';
+import { resolve } from 'path';
+import { existsSync, mkdirSync, cpSync, readdirSync } from 'fs';
 
 function copyStaticAssets() {
   return {
     name: 'copy-static-assets',
     closeBundle() {
+      // Ensure resume and manash images are in dist
       const copyPairs = [
-        ['assets', 'dist/assets'],
+        ['assets/resume', 'dist/assets/resume'],
+        ['assets/images/manash', 'dist/assets/images/manash'],
+        ['assets/images/logo', 'dist/assets/images/logo'],
         ['robots.txt', 'dist/robots.txt'],
         ['sitemap.xml', 'dist/sitemap.xml']
       ];
       for (const [src, dest] of copyPairs) {
         try {
           if (existsSync(src)) {
-            const stat = statSync(src);
-            if (stat.isDirectory()) {
+            const stat = readdirSync(src, { withFileTypes: true });
+            // If src is file, copy file, if dir, copy dir recursively
+            if (src.includes('.txt') || src.includes('.xml')) {
+              cpSync(src, dest, { force: true });
+            } else {
               mkdirSync(dest, { recursive: true });
               cpSync(src, dest, { recursive: true, force: true });
-            } else {
-              mkdirSync(dirname(dest), { recursive: true });
-              cpSync(src, dest, { force: true });
             }
             console.log(`Copied ${src} -> ${dest}`);
           }
