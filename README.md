@@ -2,7 +2,7 @@
 
 > **Reference-Style Personalized Clone – 100% accurate design, 100% personal data**
 
-A premium, production-ready, responsive personal portfolio for **Manashjyoti Bora**, B.Voc IT First Year student at **Dr. Birinchi Kumar Barooah College (Dr. B.K.B. College)**, 2026 – Present. Built by cloning the structure, UI/UX quality, animations, and detailing of the reference portfolio **Shan Portfolio** (https://shan-portfolioo.netlify.app/ – https://github.com/shajith23/shan-portfolio) while replacing *all* identity and content with Manashjyoti's real data.
+A premium, production-ready, responsive personal portfolio for **Manashjyoti Bora**, B.Voc IT First Year student at **Dr. Birinchi Kumar Barooah College (Dr. B.K.B. College)**. Currently pursuing B.Voc IT. Built by cloning the structure, UI/UX quality, animations, and detailing of the reference portfolio **Shan Portfolio** (https://shan-portfolioo.netlify.app/ – https://github.com/shajith23/shan-portfolio) while replacing *all* identity and content with Manashjyoti's real data. Built by cloning the structure, UI/UX quality, animations, and detailing of the reference portfolio **Shan Portfolio** (https://shan-portfolioo.netlify.app/ – https://github.com/shajith23/shan-portfolio) while replacing *all* identity and content with Manashjyoti's real data.
 
 **Live Demo (deploy this repo):** `https://manashjyoti-bora.netlify.app/` *(placeholder – update after deployment)*
 
@@ -12,7 +12,7 @@ A premium, production-ready, responsive personal portfolio for **Manashjyoti Bor
 
 - **Name:** Manashjyoti Bora
 - **Title:** Creative Developer & Learner
-- **Education:** B.Voc IT First Year, Dr. Birinchi Kumar Barooah College (Dr. B.K.B. College), 2026 – Present
+- **Education:** B.Voc IT First Year, Dr. Birinchi Kumar Barooah College (Dr. B.K.B. College), Currently Pursuing
 - **Location:** Nagaon, Assam, India (IST UTC+5:30)
 - **Email:** manashjyotibora122@gmail.com
 - **Phone:** +91 9365926470
@@ -104,7 +104,7 @@ Our clone keeps **same stack** for 100/100 visual accuracy:
 ### 7. Education / Feature Three
 - Repurposed awards section to honest education timeline
 - Hover reveal bg using personal images
-- Items: B.Voc IT 2026-Present, GitHub 52 contributions, Focus, Goal
+- Items: B.Voc IT Currently Pursuing, GitHub 52 contributions, Focus, Goal
 
 ### 8. Approach (Replaces Testimonial)
 - Avoided fake client testimonials (ethical requirement)
@@ -295,7 +295,7 @@ Target Lighthouse:
 
 ATS-friendly resume created via ReportLab (PDF) + python-docx (DOCX). One-page, clean, no graphics.
 
-**Contains:** Contact, Summary, Education (B.Voc IT 2026-Present Dr. B.K.B. College), Skills (Frontend, Programming Basics, Tools), Projects (NexusMart, DevHire Pro ATS, TaskFlow Enterprise, Portfolio), Additional Info (Nagaon, 12 followers, 52 contributions, open to internships).
+**Contains:** Contact, Summary, Education (B.Voc IT Currently Pursuing Dr. B.K.B. College), Skills (Frontend, Programming Basics, Tools), Projects (NexusMart, DevHire Pro ATS, TaskFlow Enterprise, Portfolio), Additional Info (Nagaon, 12 followers, 52 contributions, open to internships).
 
 No fake jobs/certificates. Download buttons link to:
 - `assets/resume/Manashjyoti_Bora_Resume.pdf`
@@ -322,7 +322,7 @@ No fake jobs/certificates. Download buttons link to:
 - [x] Manashjyoti Bora real data: name, title, email, phone, GitHub, LinkedIn, Instagram
 - [x] Photo professionally used (optimized, cropped, multiple variants, alt text)
 - [x] GitHub projects included (NexusMart, DevHire Pro ATS, TaskFlow Enterprise, Portfolio)
-- [x] Education B.Voc IT + Dr. B.K.B. College 2026-Present included
+- [x] Education B.Voc IT + Dr. B.K.B. College Currently Pursuing included
 - [x] ATS resume PDF + DOCX created and linked with download button matching reference
 - [x] Contact section works (validation, loading, success/error, mailto fallback + setup guide)
 - [x] Footer personalized

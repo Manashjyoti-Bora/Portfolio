@@ -125,7 +125,7 @@ dist/assets/resume/Manashjyoti_Bora_Resume.docx 38K
 - [x] Offcanvas/mobile menu matches reference (left nav copied from hidden main-menu, right contact+social, GSAP open)
 - [x] Hero: big "developer" 397px responsive, left intro + 5 bullets + CTAs, center stroke title, right counters 3+/52+/12+, central portrait professional, line-shape carcel dot
 - [x] Profile image professionally used, 4 optimized variants + WebP, alt "Portrait of Manashjyoti Bora"
-- [x] About: B.Voc IT First Year, Dr. Birinchi Kumar Barooah College, 2026-Present, Nagaon Assam, honest 3 paras, clip anim, circle button
+- [x] About: B.Voc IT First Year, Dr. Birinchi Kumar Barooah College, Currently Pursuing, Nagaon Assam, honest 3 paras, clip anim, circle button
 - [x] Skills: 4 cards Frontend/Web Design/Programming/Tools, same box-shadow, honest no overclaim
 - [x] Services: 4 service-single border 2px hover orange, number+arrow, tags, thumb, honest services
 - [x] Projects: Real GitHub NexusMart/DevHire/TaskFlow/Portfolio, same portfolio-three-item staggered layout, tags, descriptions, GitHub links, custom thumbs

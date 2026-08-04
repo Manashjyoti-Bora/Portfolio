@@ -114,6 +114,7 @@
   // 04. offcanvas Menu JS
   $(".tw-offcanvas-open-btn").on("click", function () {
     $(".tw-offcanvas-2-area").addClass("opened");
+    $(this).attr("aria-expanded", "true");
 
     setTimeout(() => {
       $(".tw-text-hover-effect-word").addClass("animated-text");
@@ -129,6 +130,7 @@
 
     $(".tw-offcanvas-2-area").removeClass("opened");
     $(".body-overlay").removeClass("opened");
+    $(".tw-offcanvas-open-btn").attr("aria-expanded", "false");
   });
 
   ////////////////////////////////////////////////////

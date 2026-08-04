@@ -25,5 +25,15 @@ Thumbs.db
 *.swp
 *.swo
 
+# Privacy: Do not include raw uploads, secrets, temp files
+uploads/
+.env
+.vercel/
+.netlify/
+*.tmp
+*.temp
+audit-scratch/
+comparison/
+
 # Keep resume and assets
 !assets/resume/

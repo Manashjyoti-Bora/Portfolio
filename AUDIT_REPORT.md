@@ -53,7 +53,7 @@ Reference: https://shan-portfolioo.netlify.app/ + https://github.com/shajith23/s
 ## What Already Works Well (Keep)
 - Personal data 100% replaced (name, email, phone, GitHub, LinkedIn, Instagram, Nagaon)
 - Real GitHub projects (NexusMart, DevHire Pro ATS, TaskFlow) with honest descriptions, no fake live links
-- Education: B.Voc IT First Year, Dr. B.K.B. College, 2026-Present
+- Education: B.Voc IT First Year, Dr. B.K.B. College, Currently Pursuing
 - Photo used professionally across hero/about/footer with optimized variants
 - Reference visual structure preserved (preloader, header-three, banner-three, about-three, service-three, portfolio-three, feature-three, brand-three, footer-three)
 - No fake testimonials/awards – ethically converted
