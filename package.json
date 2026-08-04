@@ -1,0 +1,28 @@
+{
+  "name": "manashjyoti-bora-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Manashjyoti Bora – Creative Developer & Learner, B.Voc IT student at Dr. B.K.B. College",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 5173",
+    "build": "vite build && npm run copy:static",
+    "copy:static": "mkdir -p dist/assets && cp -r assets/* dist/assets/ 2>/dev/null; cp robots.txt dist/ 2>/dev/null; cp sitemap.xml dist/ 2>/dev/null; echo 'Static assets copied to dist'",
+    "preview": "vite preview --host --port 4173",
+    "serve": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "Manashjyoti Bora",
+    "Creative Developer",
+    "Portfolio",
+    "Web Developer",
+    "B.Voc IT",
+    "Frontend",
+    "React",
+    "Next.js"
+  ],
+  "author": "Manashjyoti Bora <manashjyotibora122@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

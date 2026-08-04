@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Manashjyoti Bora | Creative Developer & Learner</title>
+    <meta name="description" content="Personal portfolio of Manashjyoti Bora, a Creative Developer & Learner and B.Voc IT student at Dr. Birinchi Kumar Barooah College, building clean, responsive, and user-friendly web experiences." />
+    <meta name="keywords" content="Manashjyoti Bora, Creative Developer, Learner, Web Developer, Student Developer, B.Voc IT, Dr. Birinchi Kumar Barooah College, Dr. B.K.B. College, Portfolio, Frontend Developer, React, Next.js, Nagaon Assam" />
+    <meta name="author" content="Manashjyoti Bora" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link rel="canonical" href="https://manashbora.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Manashjyoti Bora | Creative Developer & Learner" />
+    <meta property="og:description" content="B.Voc IT First Year student at Dr. B.K.B. College building clean, responsive web experiences. Explore projects, skills, and journey." />
+    <meta property="og:image" content="https://manashbora.vercel.app/assets/images/manash/manash-og-image.jpg" />
+    <meta property="og:url" content="https://manashbora.vercel.app/" />
+    <meta property="og:site_name" content="Manashjyoti Bora Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Manashjyoti Bora | Creative Developer & Learner" />
+    <meta name="twitter:description" content="Creative Developer & Learner, B.Voc IT student at Dr. B.K.B. College, Nagaon. Building responsive, user-friendly web experiences." />
+    <meta name="twitter:image" content="https://manashbora.vercel.app/assets/images/manash/manash-og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/manash/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/manash/manash-avatar.jpg" />
+    <link rel="icon" type="image/x-icon" href="assets/images/manash/favicon.png" />
+
+    <!-- Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Custom overrides for Manash portfolio -->
+    <style>
+      :root {
+        --manash-accent: #ff5101;
+      }
+      .banner-three-man img {
+        width: 460px;
+        max-width: 85vw;
+        height: auto;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      }
+      @media (max-width: 991px){
+        .banner-three-man img { width: 320px; }
+        .banner-three-man { bottom: 35% !important; }
+      }
+      /* Skills section custom */
+      .skills-three-area {
+        background: #f5f5f5;
+        padding: 60px 0 100px;
+      }
+      .skill-card {
+        background: #f5f5f5;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.25), -4px -4px 0 rgba(255,255,255,0.25);
+        border-radius: 16px;
+        padding: 28px;
+        height: 100%;
+        transition: 0.4s;
+        border: 2px solid transparent;
+      }
+      .skill-card:hover {
+        border-color: var(--manash-accent);
+        transform: translateY(-6px);
+      }
+      .skill-card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 14px;
+      }
+      .skill-card ul li {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .skill-card ul li::before {
+        content: "";
+        width: 8px; height: 8px;
+        background: var(--manash-accent);
+        border-radius: 50%;
+        display: inline-block;
+        flex-shrink: 0;
+      }
+      .portfolio-three-item .portfolio-thumb img {
+        height: 420px;
+        object-fit: cover;
+      }
+      .education-timeline .feature-three-single {
+        padding-left: 0;
+      }
+      .education-badge {
+        box-shadow: 0 4px 4px rgba(0,0,0,0.25), -4px -4px 0 rgba(255,255,255,0.25);
+        background: #f5f5f5;
+        border-radius: 90px;
+        display: inline-block;
+        padding: 7px 22px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      .approach-card {
+        background: #f5f5f5;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.25), -4px -4px 0 rgba(255,255,255,0.25);
+        border-radius: 16px;
+        padding: 30px;
+        height: 100%;
+      }
+      /* Focus states for a11y */
+      a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+        outline: 2px solid var(--manash-accent);
+        outline-offset: 3px;
+      }
+      .skip-link {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        background: #000;
+        color: #fff;
+        padding: 8px 16px;
+        z-index: 10000;
+      }
+      .skip-link:focus {
+        top: 10px;
+        left: 10px;
+      }
+      /* Reduced motion */
+      @media (prefers-reduced-motion: reduce){
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+
+    <!-- Schema.org Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Manashjyoti Bora",
+        "jobTitle": "Creative Developer & Learner",
+        "email": "mailto:manashjyotibora122@gmail.com",
+        "telephone": "+919365926470",
+        "url": "https://manashbora.vercel.app/",
+        "image": "https://manashbora.vercel.app/assets/images/manash/manash-og-image.jpg",
+        "sameAs": [
+          "https://github.com/Manashjyoti-Bora",
+          "https://www.linkedin.com/in/manashjyoti-bora",
+          "https://www.instagram.com/scarrrr_09"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Dr. Birinchi Kumar Barooah College",
+          "alternateName": "Dr. B.K.B. College"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nagaon",
+          "addressRegion": "Assam",
+          "addressCountry": "IN"
+        },
+        "description": "B.Voc IT First Year student building clean, responsive, and user-friendly web experiences."
+      }
+    </script>
+  </head>
+
+  <body class="tw-magic-cursor">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+      <div class="preloader-heading">
+        <div class="load-text">
+          <span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="side-overlay"></div>
+
+    <div id="magic-cursor"><div id="ball"></div></div>
+
+    <div id="toast-container" aria-live="polite"></div>
+
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn" aria-label="Back to top">
+        <svg width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="tw-offcanvas-2-area p-relative" id="offcanvas-menu">
+      <div class="tw-offcanvas-2-bg is-left left-box"></div>
+      <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+      <div class="tw-offcanvas-2-wrapper">
+        <div class="tw-offcanvas-2-left left-box">
+          <div class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center">
+            <div class="twoffcanvas__logo">
+              <a class="logo-1" href="#home"><img src="assets/images/logo/logo.png" alt="Manashjyoti Bora logo" /></a>
+            </div>
+            <div class="tw-offcanvas-2-close d-md-none text-end">
+              <button class="tw-offcanvas-2-close-btn" aria-label="Close menu"><span class="text" aria-hidden="true"><span class="text-white">close</span></span><span class="d-inline-block"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="32.621" height="1.00918" transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)" fill="currentcolor"/><rect width="32.621" height="1.00918" transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)" fill="currentcolor"/></svg></span></span></button>
+            </div>
+          </div>
+          <div class="tw-main-menu-mobile menu-hover-active counter-row">
+            <nav aria-label="Mobile navigation"></nav>
+          </div>
+        </div>
+        <div class="tw-offcanvas-2-right right-box d-none d-md-block p-relative">
+          <div class="tw-offcanvas-2-close text-end">
+            <button class="tw-offcanvas-2-close-btn" aria-label="Close menu"><span class="text" aria-hidden="true"><span>close</span></span><span class="d-inline-block"><span><svg width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M9.80859 9.80762L28.1934 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.80859 28.1924L28.1934 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></button>
+          </div>
+          <div class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100">
+            <div class="twoffcanvas__contact-info">
+              <div class="twoffcanvas__contact-title"><h5 class="text-white">Contact Manash</h5></div>
+              <ul>
+                <li><span class="text-main-two-600 tw-text-xl"><i class="ph ph-map-pin-line"></i></span><a class="text-white" href="https://www.google.com/maps/search/Nagaon+Assam" target="_blank" rel="noopener">Nagaon, Assam, India</a></li>
+                <li><span class="text-main-two-600 tw-text-xl"><i class="ph ph-envelope"></i></span><a class="text-white" href="mailto:manashjyotibora122@gmail.com">manashjyotibora122@gmail.com</a></li>
+                <li><span class="text-main-two-600 tw-text-xl"><i class="ph ph-phone-call"></i></span><a class="text-white" href="tel:+919365926470">+91 9365926470</a></li>
+              </ul>
+            </div>
+            <div class="footer-social" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <ul class="tw-gap-2">
+                <li><a href="https://github.com/Manashjyoti-Bora" target="_blank" rel="noopener" aria-label="GitHub"><span class="active-media d-flex align-items-center tw-gap-1">GITHUB <i class="ph ph-arrow-bend-up-right"></i></span><span class="hover-media"><i class="ph ph-github-logo"></i></span></a></li>
+                <li><a href="https://www.linkedin.com/in/manashjyoti-bora" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="active-media d-flex align-items-center tw-gap-1">LINKEDIN <i class="ph ph-arrow-bend-up-right"></i></span><span class="hover-media"><i class="ph ph-linkedin-logo"></i></span></a></li>
+                <li><a href="https://www.instagram.com/scarrrr_09?igsh=MWN3NzV0dWlwYXM2eg==" target="_blank" rel="noopener" aria-label="Instagram"><span class="active-media d-flex align-items-center tw-gap-1">INSTAGRAM <i class="ph ph-arrow-bend-up-right"></i></span><span class="hover-media"><i class="ph ph-instagram-logo"></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header header-two header-three tw-transition-all tw-z-99 position-relative" id="home">
+      <div class="container tw-container-1800-px">
+        <nav class="d-flex align-items-center justify-content-between position-relative" aria-label="Main navigation">
+          <div class="header-three-logo tw-rounded-md">
+            <a href="#home" class="link" aria-label="Home"><img src="assets/images/logo/logo-secendary.png" alt="Manash Logo" class="max-w-200-px" /></a>
+          </div>
+
+          <div class="header-three-social d-none d-lg-block">
+            <ul class="d-flex tw-gap-205">
+              <li><a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md" href="https://github.com/Manashjyoti-Bora" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph-bold ph-github-logo"></i></a></li>
+              <li><a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md" href="https://www.linkedin.com/in/manashjyoti-bora" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph-bold ph-linkedin-logo"></i></a></li>
+              <li><a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md" href="https://www.instagram.com/scarrrr_09?igsh=MWN3NzV0dWlwYXM2eg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a></li>
+              <li><a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md" href="mailto:manashjyotibora122@gmail.com" aria-label="Email"><i class="ph-bold ph-envelope"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="header-menu d-none">
+            <div class="main-menu">
+              <nav class="tw-main-menu-content" aria-label="Primary navigation">
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header-right d-flex align-items-center tw-gap-705">
+            <div class="header-three-menu">
+              <button class="tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md" aria-label="Open menu" aria-expanded="false" aria-controls="offcanvas-menu"><span><img class="tw-transition-3" src="assets/images/icons/header-three-toggle.svg" alt="" /></span></button>
+            </div>
+            <div class="header-three-button d-none d-md-block">
+              <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md" href="assets/resume/Manashjyoti_Bora_Resume.pdf" download="Manashjyoti_Bora_Resume.pdf">download cv <span class="tw-hover-btn-circle-dot bg-main-two-600"></span></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div id="smooth-wrapper"><div id="smooth-content">
+
+        <!-- Hero / Banner -->
+        <section class="banner-three-area" aria-label="Hero">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="banner-three-wrapper position-relative z-1">
+                  <div class="banner-three-man position-absolute start-50 translate-middle-x">
+                    <img src="assets/images/shapes/banner-three-man.png" alt="Portrait of Manashjyoti Bora" />
+                  </div>
+                  <h1 class="banner-three-title text-black tw-mb-30">developer</h1>
+                  <div class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1">
+                    <div class="banner-three-left tw-rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                      <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">Hello! I'm Manashjyoti Bora — a Creative Developer &amp; Learner.</h2>
+                      <p class="tw-text-lg tw-mb-6" style="line-height:1.5">Building clean, responsive, and user-friendly web experiences while growing my skills in IT and modern development.</p>
+                      <div class="banner-three-list">
+                        <ul>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets/images/icons/banner-three-pluse.svg" alt="" /></span> Frontend Development</li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets/images/icons/banner-three-pluse.svg" alt="" /></span> Responsive UI / UX</li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets/images/icons/banner-three-pluse.svg" alt="" /></span> React & Next.js Learning</li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets/images/icons/banner-three-pluse.svg" alt="" /></span> GitHub Project Building</li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets/images/icons/banner-three-pluse.svg" alt="" /></span> Clean Code Focus</li>
+                        </ul>
+                      </div>
+                      <div class="d-flex tw-gap-3 tw-mt-8 flex-wrap">
+                        <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg" href="#projects">View Projects <span class="tw-hover-btn-circle-dot bg-main-two-600"></span></a>
+                        <a class="tw-hover-btn bg-white text-black fw-bold tw-py-4 tw-px-10 d-inline-block text-uppercase tw-rounded-lg" style="border:2px solid #000" href="assets/resume/Manashjyoti_Bora_Resume.pdf" download>Resume <span class="tw-hover-btn-circle-dot bg-main-two-600"></span></a>
+                      </div>
+                    </div>
+                    <div class="banner-three-center text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                      <h3 class="banner-three-center-title tw-text-120">Design, coding and learning made better.</h3>
+                      <p class="tw-mt-4 tw-mb-6 tw-text-lg fw-medium text-black" style="max-width:480px;margin:auto">Learning, building, and growing through modern web development — from Nagaon, Assam.</p>
+                      <div class="banner-three-button d-flex justify-content-center tw-gap-3 flex-wrap">
+                        <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg" href="#contact">Let's talk <span class="tw-hover-btn-circle-dot bg-main-two-600"></span></a>
+                        <a class="tw-hover-btn bg-transparent text-black fw-bold tw-py-4 tw-px-10 d-inline-block text-uppercase tw-rounded-lg" style="border:2px solid #000" href="https://github.com/Manashjyoti-Bora" target="_blank" rel="noopener">GitHub <span class="tw-hover-btn-circle-dot bg-main-two-600"></span></a>
+                      </div>
+                    </div>
+                    <div class="banner-three-right tw-rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                      <div class="banner-three-counter-item tw-rounded-md tw-mb-4 position-relative">
+                        <h4 class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"><span class="purecounter font-heading" data-purecounter-duration="2" data-purecounter-end="3">3</span>+</h4>
+                        <p class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">Projects Built & Learning</p>
+                      </div>
+                      <div class="banner-three-counter-item tw-rounded-md tw-mb-4 ms-auto bg-black">
+                        <h4 class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-white tw-mb-2 lh-1"><span class="purecounter font-heading" data-purecounter-duration="4" data-purecounter-end="52">52</span>+</h4>
+                        <p class="banner-three-counter-paragraph tw-text-lg fw-medium text-white">GitHub Contributions</p>
+                      </div>
+                      <div class="banner-three-counter-item tw-rounded-md tw-mb-4">
+                        <div class="d-flex align-items-center tw-mb-2">
+                          <div class="tw-w-9 tw-h-9 rounded-circle overflow-hidden border border-2 border-white position-relative z-1"><img src="assets/images/manash/manash-thumb.jpg" alt="Manash" class="w-100 h-100 object-fit-cover" loading="lazy" /></div>
+                          <div class="tw-w-9 tw-h-9 rounded-circle overflow-hidden border border-2 border-white position-relative z-2 tw--ms-16-px"><img src="assets/images/thumbs/team-img2.png" alt="" class="w-100 h-100 object-fit-cover" loading="lazy" /></div>
+                          <div class="tw-w-9 tw-h-9 rounded-circle overflow-hidden border border-2 border-white position-relative z-3 tw--ms-16-px"><img src="assets/images/thumbs/team-img3.png" alt="" class="w-100 h-100 object-fit-cover" loading="lazy" /></div>
+                        </div>
+                        <h4 class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"><span class="purecounter font-heading" data-purecounter-duration="3" data-purecounter-end="12">12</span>+</h4>
+                        <p class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">Followers & Community</p>
+                      </div>
+                    </div>
+                    <div class="banner-three-line-shape position-absolute start-50 translate-middle-x z-n1">
+                      <img loading="lazy" src="assets/images/shapes/banner-three-shape.png" alt="" />
+                      <div class="banner-three-carcel-shape"><div><span></span></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-three-area py-120 position-relative z-1" id="about">
+          <div class="container tw-container-1800-px">
+            <div class="about-three-top position-relative z-1">
+              <div class="row justify-content-center tw-mb-21">
+                <div class="col-xl-9">
+                  <div class="text-center">
+                    <h2 class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim">I am a B.Voc IT student passionate about crafting clean, responsive, and user-friendly web experiences while continuously learning modern development.</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img loading="lazy" class="tw-anim-img w-100 tw-rounded-lg" data-animate="true" src="assets/images/thumbs/about-three-thumb.jpg" alt="Portrait of Manashjyoti Bora" />
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="about-three-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div>
+                      <p class="tw-text-xl tw-mb-10">Hi, I'm <strong>Manashjyoti Bora</strong> — a Creative Developer &amp; Learner from Nagaon, Assam, and a B.Voc IT First Year student at <strong>Dr. Birinchi Kumar Barooah College (Dr. B.K.B. College)</strong>, batch 2026 – Present. I am learning, building, and growing through modern web development.</p>
+                      <p class="tw-text-xl tw-mb-10">My focus is on frontend development, responsive design, and clean UI implementation. I enjoy turning ideas into functional interfaces using HTML, CSS, JavaScript, and React. My GitHub projects like NexusMart, DevHire Pro ATS, and TaskFlow Enterprise reflect my journey in understanding state management, component architecture, and real-world UI patterns.</p>
+                      <p class="tw-text-xl tw-mb-10">I believe great development is about honesty, consistency, and curiosity. As a beginner, I’m open to internships, feedback, and collaborative learning. Every project I build teaches me something new about code, design, and user experience — and I document that learning openly on GitHub.</p>
+                    </div>
+                    <div class="about-three-counter d-inline-block">
+                      <div class="tw-hover-btn-wrapper d-inline-block">
+                        <a class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200" href="#education">
+                          <span class="d-flex flex-column justify-content-center">
+                            <span class="tw-btn-circle-icon text-heading tw-text-8 tw-transition-3 font-heading fw-medium">1+</span>
+                            <span class="text-heading fw-bold text-center tw-transition-3 tw-text-2xl fw-medium">Years<br/>Experience</span>
+                            <span class="text-heading fw-medium text-center tw-transition-3 tw-text-sm tw-mt-2">Learning & Building</span>
+                          </span>
+                          <i class="tw-btn-circle-dot bg-main-two-600"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about-three-wrap-shape d-flex justify-content-between">
+                <div class="banner-three-counter-item tw-rounded-md position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  <h2 class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"><span class="purecounter font-heading" data-purecounter-duration="4" data-purecounter-end="3">3</span></h2>
+                  <p class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">Real GitHub Projects</p>
+                </div>
+                <div class="banner-three-counter-item tw-rounded-md position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <h2 class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"><span class="purecounter font-heading" data-purecounter-duration="2" data-purecounter-end="100">100</span>%</h2>
+                  <p class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">Learning Commitment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div><img loading="lazy" class="about-three-shape position-absolute start-0 w-100" src="assets/images/shapes/about-three-shape.png" alt="" /></div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-three-area" id="skills">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center tw-mb-15">
+              <div class="col-xl-8 text-center">
+                <span class="education-badge" data-aos="fade-up">Skills & Technologies</span>
+                <h2 class="tw-text-14 fw-semibold tw-mt-4 tw-mb-6" data-aos="fade-up" data-aos-delay="100">Building with modern tools, learning with purpose.</h2>
+                <p class="tw-text-xl" data-aos="fade-up" data-aos-delay="200">As a beginner, I focus on fundamentals and practical application. Here's what I'm working with and learning every day — honest, no exaggeration.</p>
+              </div>
+            </div>
+            <div class="row gx-4 gy-4">
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="skill-card"><h3>Frontend Development</h3><ul><li>HTML5 Semantic Markup</li><li>CSS3, Flexbox, Grid</li><li>JavaScript ES6+</li><li>React.js Basics</li><li>Responsive Design</li><li>Bootstrap & Tailwind (basic)</li></ul></div></div>
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="skill-card"><h3>Web Design / UI</h3><ul><li>Clean UI Implementation</li><li>Portfolio Design</li><li>Glassmorphic UI</li><li>Component Architecture</li><li>Progressive Disclosure</li><li>Mobile-First Thinking</li></ul></div></div>
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="skill-card"><h3>Programming Basics</h3><ul><li>JavaScript Fundamentals</li><li>TypeScript Basics</li><li>State Management</li><li>REST API Basics</li><li>Zod Validation Basics</li><li>CRUD Patterns</li></ul></div></div>
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400"><div class="skill-card"><h3>Tools & Learning</h3><ul><li>Git & GitHub</li><li>Vite, npm</li><li>VS Code, DevTools</li><li>MongoDB Atlas Basics</li><li>Next.js App Router (learning)</li><li>JWT Auth Basics</li></ul></div></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="marquee tw-pt-17 bg-black" aria-hidden="true">
+          <div class="marquee_left d-flex align-items-center justify-content-between tw-gap-16 overflow-hidden">
+            <div><h2 class="marquee-two-title marquee-three-title text-uppercase text-white">Services <span class="text-white">-</span></h2></div>
+            <div><h2 class="marquee-two-title marquee-three-title text-uppercase text-stroke">Services <span class="text-white">-</span></h2></div>
+            <div><h2 class="marquee-two-title marquee-three-title text-uppercase text-white">Services <span class="text-white">-</span></h2></div>
+            <div><h2 class="marquee-two-title marquee-three-title text-uppercase text-stroke">Services <span class="text-white">-</span></h2></div>
+            <div><h2 class="marquee-two-title marquee-three-title text-uppercase text-white">Services <span class="text-white">-</span></h2></div>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <section class="service-three-area bg-black pt-120 tw-pb-15" id="services">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-12">
+                <div class="service-three-wrapper">
+                  <div class="service-three-single" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+                    <div class="service-three-item d-flex justify-content-between align-items-center">
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">01 <img class="tw-transition-3" src="assets/images/icons/service-three-arrow.svg" alt="" /></span></div>
+                        <div><div><h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#projects">Responsive Website Development</a></h2></div><div class="portfolio-list portfolio-two-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Clean Code</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Mobile First</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Fast Loading</a></li></ul></div></div>
+                      </div>
+                      <div class="service-three-thumb"><a href="#projects"><img loading="lazy" src="assets/images/thumbs/service-three-thumb1.png" alt="Responsive development" /></a></div>
+                    </div>
+                  </div>
+                  <div class="service-three-single ms-auto" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+                    <div class="service-three-item d-flex justify-content-between align-items-center">
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">02 <img class="tw-transition-3" src="assets/images/icons/service-three-arrow.svg" alt="" /></span></div>
+                        <div><div><h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#projects">Portfolio Website Design</a></h2></div><div class="portfolio-list portfolio-two-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Premium UI</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Student Focused</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">SEO Friendly</a></li></ul></div></div>
+                      </div>
+                      <div class="service-three-thumb"><a href="#projects"><img loading="lazy" src="assets/images/thumbs/service-three-thumb2.png" alt="Portfolio design" /></a></div>
+                    </div>
+                  </div>
+                  <div class="service-three-single" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">
+                    <div class="service-three-item d-flex justify-content-between align-items-center">
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">03 <img class="tw-transition-3" src="assets/images/icons/service-three-arrow.svg" alt="" /></span></div>
+                        <div><div><h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#projects">Frontend UI Implementation</a></h2></div><div class="portfolio-list portfolio-two-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">React Components</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">State Handling</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Animation</a></li></ul></div></div>
+                      </div>
+                      <div class="service-three-thumb"><a href="#projects"><img loading="lazy" src="assets/images/thumbs/service-three-thumb3.png" alt="UI implementation" /></a></div>
+                    </div>
+                  </div>
+                  <div class="service-three-single ms-auto" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
+                    <div class="service-three-item d-flex justify-content-between align-items-center">
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">04 <img class="tw-transition-3" src="assets/images/icons/service-three-arrow.svg" alt="" /></span></div>
+                        <div><div><h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#projects">GitHub Project Building</a></h2></div><div class="portfolio-list portfolio-two-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Version Control</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Documentation</a></li><li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#contact">Learning</a></li></ul></div></div>
+                      </div>
+                      <div class="service-three-thumb"><a href="#projects"><img loading="lazy" src="assets/images/thumbs/service-three-thumb4.png" alt="GitHub projects" /></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects / Portfolio -->
+        <section class="portfolio-three-area py-120 position-relative z-1" id="projects">
+          <div class="portfolio-three-shape position-absolute top-0 z-n1"><h3 class="portfolio-three-shape-title">works</h3></div>
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="d-flex justify-content-between flex-wrap tw-mb-10">
+                  <h2 class="tw-text-15 fw-semibold" data-aos="fade-up">Selected GitHub Projects</h2>
+                  <p class="tw-text-xl" style="max-width:500px" data-aos="fade-up" data-aos-delay="100">Real projects from my GitHub — no fake data. Each built as a learning experiment in modern web development patterns.</p>
+                </div>
+                <div class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1">
+                  <!-- NexusMart -->
+                  <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
+                      <div class="tw-mb-6">
+                        <div><h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="https://github.com/Manashjyoti-Bora/nexusmart" target="_blank" rel="noopener">NexusMart – E-commerce</a></h2></div>
+                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/nexusmart" target="_blank" rel="noopener">NEXT.JS</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/nexusmart" target="_blank" rel="noopener">TYPESCRIPT</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/nexusmart" target="_blank" rel="noopener">MONGODB</a></li></ul></div>
+                        <p class="tw-mt-4 tw-text-base" style="max-width:480px">Full-stack e-commerce with Next.js App Router, TypeScript, MongoDB Atlas, JWT auth (bcrypt + HTTP-only cookies), cart & checkout, role-gated admin panel, Zod validation on every mutation. CI pipeline with typecheck & build.</p>
+                      </div>
+                      <div><div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="https://github.com/Manashjyoti-Bora/nexusmart" target="_blank" rel="noopener" aria-label="View NexusMart"><i class="ph ph-arrow-up-right"></i></a></div></div>
+                    </div>
+                    <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View"><a class="d-block cursor-hide tw-rounded-lg" href="https://github.com/Manashjyoti-Bora/nexusmart" target="_blank" rel="noopener"><img loading="lazy" class="w-100 tw-rounded-lg" src="assets/images/thumbs/portfolio-three-thumb1.jpg" alt="NexusMart project thumbnail" /></a></div>
+                  </div>
+                  <!-- DevHire -->
+                  <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
+                      <div class="tw-mb-6">
+                        <div><h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="https://github.com/Manashjyoti-Bora/devhire-pro-ats" target="_blank" rel="noopener">DevHire Pro ATS</a></h2></div>
+                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/devhire-pro-ats" target="_blank" rel="noopener">REACT 19</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/devhire-pro-ats" target="_blank" rel="noopener">VITE</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/devhire-pro-ats" target="_blank" rel="noopener">UI DESIGN</a></li></ul></div>
+                        <p class="tw-mt-4 tw-text-base" style="max-width:480px">Job portal & ATS UI — real-time multi-attribute filtering, glassmorphic light/dark themes, application pipeline tracker (Applied → Screening → Interview → Assessment → Offer). A learning project in complex UI state design.</p>
+                      </div>
+                      <div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="https://github.com/Manashjyoti-Bora/devhire-pro-ats" target="_blank" rel="noopener" aria-label="View DevHire"><i class="ph ph-arrow-up-right"></i></a></div>
+                    </div>
+                    <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View"><a class="d-block cursor-hide tw-rounded-lg" href="https://github.com/Manashjyoti-Bora/devhire-pro-ats" target="_blank" rel="noopener"><img loading="lazy" class="w-100 tw-rounded-lg" src="assets/images/thumbs/portfolio-three-thumb2.jpg" alt="DevHire Pro ATS thumbnail" /></a></div>
+                  </div>
+                  <!-- TaskFlow -->
+                  <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
+                      <div class="tw-mb-6">
+                        <div><h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="https://github.com/Manashjyoti-Bora/taskflow-enterprise" target="_blank" rel="noopener">TaskFlow Enterprise</a></h2></div>
+                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/taskflow-enterprise" target="_blank" rel="noopener">REACT</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/taskflow-enterprise" target="_blank" rel="noopener">KANBAN</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="https://github.com/Manashjyoti-Bora/taskflow-enterprise" target="_blank" rel="noopener">CRUD</a></li></ul></div>
+                        <p class="tw-mt-4 tw-text-base" style="max-width:480px">Kanban productivity app — dynamic boards, live priority tagging and sprint tracking. React with modern state management, component-per-column architecture, optimistic UI updates, memoized lists for smooth performance on budget phones.</p>
+                      </div>
+                      <div><div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="https://github.com/Manashjyoti-Bora/taskflow-enterprise" target="_blank" rel="noopener" aria-label="View TaskFlow"><i class="ph ph-arrow-up-right"></i></a></div></div>
+                    </div>
+                    <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View"><a class="d-block cursor-hide tw-rounded-lg" href="https://github.com/Manashjyoti-Bora/taskflow-enterprise" target="_blank" rel="noopener"><img loading="lazy" class="w-100 tw-rounded-lg" src="assets/images/thumbs/portfolio-three-thumb3.jpg" alt="TaskFlow thumbnail" /></a></div>
+                  </div>
+                  <!-- Portfolio itself -->
+                  <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
+                      <div class="tw-mb-6">
+                        <div><h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="#home">Manash Portfolio – This Site</a></h2></div>
+                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap"><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#home">HTML/CSS/JS</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#home">GSAP/AOS</a></li><li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#home">SEO</a></li></ul></div>
+                        <p class="tw-mt-4 tw-text-base" style="max-width:480px">Premium personal portfolio rebuilt with 100% personal data. Features GSAP animations, AOS scroll reveals, custom cursor, offcanvas menu, responsive design, contact form with validation, ATS resume, and full SEO optimization.</p>
+                      </div>
+                      <div><div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="#home" aria-label="View Portfolio"><i class="ph ph-arrow-up-right"></i></a></div></div>
+                    </div>
+                    <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View"><a class="d-block cursor-hide tw-rounded-lg" href="#home"><img loading="lazy" class="w-100 tw-rounded-lg" src="assets/images/thumbs/portfolio-three-thumb4.jpg" alt="Portfolio thumbnail" /></a></div>
+                  </div>
+
+                  <div class="about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0" data-aos="fade-up">
+                    <div class="tw-hover-btn-wrapper d-inline-block">
+                      <a class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden" href="https://github.com/Manashjyoti-Bora" target="_blank" rel="noopener">
+                        <span class="d-flex flex-column justify-content-center"><span class="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold">Visit GitHub <br/>Profile <i class="ph ph-arrow-up-right"></i></span></span>
+                        <i class="tw-btn-circle-dot bg-main-two-600"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education / Feature repurposed -->
+        <div class="feature-three-area py-120 position-relative z-1" id="education">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center tw-mb-10">
+              <div class="col-xl-8 text-center">
+                <span class="education-badge" style="background:#111;color:#fff">Education & Learning Journey</span>
+                <h2 class="tw-text-15 fw-semibold text-white tw-mt-4" data-aos="fade-up">Honest academic path, no fake credentials.</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="feature-three-wrapper hover__widget">
+                  <div class="feature-three-single current hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="feature-three-item d-flex justify-content-between align-items-center">
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20">01</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px">B.Voc IT</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">First Year Student – Dr. B.K.B. College – Learning fundamentals & building portfolio</span></div>
+                      </div>
+                      <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">2026 – Present</span></div>
+                    </div>
+                    <div class="hover__reveal-bg bg-img" data-background-image="assets/images/manash/manash-about.jpg"></div>
+                  </div>
+                  <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="feature-three-item d-flex justify-content-between align-items-center">
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20">02</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px">GitHub</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">52 contributions, 3 public real projects, 12 followers – Learning in public</span></div>
+                      </div>
+                      <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">2025 – 2026</span></div>
+                    </div>
+                    <div class="hover__reveal-bg bg-img" data-background-image="assets/images/thumbs/portfolio-three-thumb2.jpg"></div>
+                  </div>
+                  <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="feature-three-item d-flex justify-content-between align-items-center">
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20">03</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px">Focus</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">Frontend, Responsive UI, React State, Next.js App Router, Clean Code</span></div>
+                      </div>
+                      <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">Ongoing</span></div>
+                    </div>
+                    <div class="hover__reveal-bg bg-img" data-background-image="assets/images/thumbs/portfolio-three-thumb3.jpg"></div>
+                  </div>
+                  <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="feature-three-item d-flex justify-content-between align-items-center">
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20">04</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px">Goal</span></div>
+                        <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">Grow as Creative Developer, open to internships, build user-friendly products</span></div>
+                      </div>
+                      <div><span class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">Future</span></div>
+                    </div>
+                    <div class="hover__reveal-bg bg-img" data-background-image="assets/images/thumbs/portfolio-three-thumb1.jpg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Approach / What I Do (replaces testimonial) -->
+        <section class="testimonial-three-area pt-120 tw-pb-22">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center tw-mb-21">
+              <div class="col-xl-10">
+                <div class="text-center">
+                  <h2 class="testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim">My approach is simple: learn deeply, build honestly, and share openly.</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-4 gy-4">
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="approach-card"><div class="tw-mb-6"><i class="ph ph-code tw-text-4xl"></i></div><h3 class="tw-text-2xl tw-mb-4">Learn by Building</h3><p class="tw-text-lg">I don’t just watch tutorials. I build real projects from GitHub — Kanban boards, ATS UIs, e-commerce flows — to understand state, architecture, and user problems.</p></div></div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="approach-card"><div class="tw-mb-6"><i class="ph ph-palette tw-text-4xl"></i></div><h3 class="tw-text-2xl tw-mb-4">Design with Purpose</h3><p class="tw-text-lg">Every color, spacing, and interaction matters. I aim for clean, responsive, accessible UI that works on a 320px phone and a 1920px desktop without horizontal scroll.</p></div></div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="approach-card"><div class="tw-mb-6"><i class="ph ph-github-logo tw-text-4xl"></i></div><h3 class="tw-text-2xl tw-mb-4">Build in Public</h3><p class="tw-text-lg">My GitHub is my learning diary: 52 contributions, honest READMEs that explain what experiment I ran, what I learned, and what’s next. No fake experience, no copied portfolios.</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technologies / Brand -->
+        <section class="brand-three-area brand-two-area pb-120">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="text-center tw-mb-15"><h2 class="brand-three-title tw-text-xl tw-char-animation">Technologies I Use & Learn</h2></div>
+              </div>
+            </div>
+            <div class="row gx-2 gy-2">
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="100">HTML5</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="200">CSS3</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="300">JavaScript</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="400">React.js</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="500">Next.js</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="100">TypeScript</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="200">Tailwind</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="300">Bootstrap</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="400">Git & GitHub</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="500">MongoDB</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="100">Vite</div></div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6"><div class="brand-item brand-three-item position-relative z-1 text-center fw-bold" data-aos="fade-up" data-aos-delay="200">Figma Basics</div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <section class="footer-three-area pt-120 tw-pb-10 position-relative z-1" id="contact">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-between pb-120">
+              <div class="col-xl-5 col-lg-6">
+                <div class="footer-three-top-left tw-me-25" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  <div class="tw-mb-9"><h2 class="tw-text-15 text-white tw-char-animation">Let's create something meaningful</h2><p class="text-white tw-mt-4 tw-text-lg">I’m a B.Voc IT student open to internships, collaborations, and learning opportunities. Let’s talk about web development, UI, or your next idea.</p></div>
+                  <div class="d-inline-flex align-items-center tw-gap-6 tw-mb-10 flex-wrap">
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white" href="mailto:manashjyotibora122@gmail.com">manashjyotibora122@gmail.com</a>
+                    <span class="tw-text-2xl fw-medium text-main-600">//</span>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white" href="tel:+919365926470">+91 9365926470</a>
+                  </div>
+                  <div class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6">
+                    <div class="footer-three-top-thumb tw-w-160-px"><img loading="lazy" class="tw-rounded-lg w-100" src="assets/images/manash/manash-thumb.jpg" alt="Portrait of Manashjyoti Bora" /></div>
+                    <div class="footer-three-top-content d-flex justify-content-between flex-column">
+                      <div><h3 class="tw-text-xl text-white tw-mb-2">Manashjyoti Bora</h3><p class="text-white">Creative Developer & Learner<br/>B.Voc IT – Dr. B.K.B. College<br/>Nagaon, Assam, India</p></div>
+                      <div class="footer-three-social"><ul class="d-flex align-items-center tw-gap-1">
+                        <li><a class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading" href="https://github.com/Manashjyoti-Bora" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a></li>
+                        <li><a class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading" href="https://www.linkedin.com/in/manashjyoti-bora" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a></li>
+                        <li><a class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading" href="https://www.instagram.com/scarrrr_09?igsh=MWN3NzV0dWlwYXM2eg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a></li>
+                      </ul></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="footer-three-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <form id="contactForm" novalidate name="contact" method="POST">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_template" value="table" />
+                    <input type="hidden" name="_subject" value="New message from portfolio contact form" />
+                    <div class="row">
+                      <div class="col-xl-12"><div class="position-relative tw-mb-7"><label for="name" class="visually-hidden">Name</label><input id="name" name="name" type="text" class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Your Name *" required aria-required="true" aria-describedby="error-name" autocomplete="name" /><small id="error-name" class="text-danger d-none tw-mt-2 d-block" data-error="name" role="alert"></small></div></div>
+                      <div class="col-xl-12"><div class="position-relative tw-mb-7"><label for="email" class="visually-hidden">Email</label><input id="email" name="email" type="email" class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Email Address *" required aria-required="true" aria-describedby="error-email" autocomplete="email" /><small id="error-email" class="text-danger d-none tw-mt-2 d-block" data-error="email" role="alert"></small></div></div>
+                      <div class="col-xl-12"><div class="position-relative tw-mb-7"><label for="subject" class="visually-hidden">Subject</label><input id="subject" name="subject" type="text" class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Subject *" required aria-required="true" aria-describedby="error-subject" /><small id="error-subject" class="text-danger d-none tw-mt-2 d-block" data-error="subject" role="alert"></small></div></div>
+                      <div class="col-xl-12"><div class="position-relative tw-mb-7"><label for="message" class="visually-hidden">Message</label><textarea id="message" name="message" class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Your message... *" required aria-required="true" aria-describedby="error-message"></textarea><small id="error-message" class="text-danger d-none tw-mt-2 d-block" data-error="message" role="alert"></small></div></div>
+                      <div class="col-xl-12"><div class="contact-button"><button id="submitBtn" type="submit" class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg"><span id="btnText">submit message</span><span id="btnSpinner" class="d-none ms-2"><i class="ph ph-spinner"></i> Sending...</span></button><div id="formStatus" class="tw-mt-4 text-white tw-text-lg d-none" role="status" aria-live="polite"></div></div></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-three-border tw-px-18 tw-mb-10">
+            <div class="container-fluid gx-0">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="footer-three-middile d-flex align-items-center justify-content-between">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                      <h4 class="tw-text-2xl text-white tw-mb-2">Quick Links</h4>
+                      <ul class="d-flex tw-gap-2 flex-wrap">
+                        <li><a class="tw-text-lg text-white" href="#home">Home,</a></li>
+                        <li><a class="tw-text-lg text-white" href="#about">About,</a></li>
+                        <li><a class="tw-text-lg text-white" href="#skills">Skills,</a></li>
+                        <li><a class="tw-text-lg text-white" href="#services">Services,</a></li>
+                        <li><a class="tw-text-lg text-white" href="#projects">Projects,</a></li>
+                        <li><a class="tw-text-lg text-white" href="#education">Education,</a></li>
+                        <li><a class="tw-text-lg text-white" href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a class="footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle" href="#home" aria-label="Back to top"><i class="ph ph-arrow-up"></i></a></div>
+                    <div class="text-lg-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                      <h4 class="tw-text-2xl text-white tw-mb-2">Manashjyoti Bora Portfolio</h4>
+                      <p class="tw-text-lg text-white">© 2026 Manashjyoti Bora. All rights reserved.<br/>Built with honesty, not fake data. Premium, responsive, and performance-focused.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="container tw-container-1800-px">
+              <div class="row"><div class="col-xl-12"><div class="footer-three-bottom text-center"><h5 class="footer-three-bottom-title text-white text-center">Manash</h5></div></div></div>
+            </div>
+          </div>
+          <div><img loading="lazy" class="position-absolute top-0 start-0 z-n1" src="assets/images/shapes/footer-three-bg-shape.png" alt="" /></div>
+        </section>
+
+      </div></div>
+    </main>
+
+    <!-- JS -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/phosphor-icon.js"></script>
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/gsap/gsap.js"></script>
+    <script src="assets/js/gsap/gsap-scroll-to-plugin.js"></script>
+    <script src="assets/js/gsap/gsap-scroll-smoother.js"></script>
+    <script src="assets/js/gsap/gsap-scroll-trigger.js"></script>
+    <script src="assets/js/gsap/gsap-split-text.js"></script>
+    <script src="assets/js/gsap/chroma.min.js"></script>
+    <script src="assets/js/slider-active.js"></script>
+    <script src="assets/js/custom-gsap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tw-cursor.js"></script>
+
+    <script>
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e){
+          const targetId = this.getAttribute('href');
+          if(targetId.length>1){
+            const target = document.querySelector(targetId);
+            if(target){
+              e.preventDefault();
+              target.scrollIntoView({behavior:'smooth', block:'start'});
+              // Close offcanvas if open
+              document.querySelector('.tw-offcanvas-2-area')?.classList.remove('opened');
+            }
+          }
+        });
+      });
+
+      // Contact form logic with validation, toast, mailto fallback
+      const form = document.getElementById('contactForm');
+      const btn = document.getElementById('submitBtn');
+      const btnText = document.getElementById('btnText');
+      const btnSpinner = document.getElementById('btnSpinner');
+      const statusDiv = document.getElementById('formStatus');
+
+      function showToast(message, type='success'){
+        const container = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        toast.className = `toast-message ${type} active`;
+        toast.innerHTML = `<div class="toast-message__content"><div class="toast-message__icon">${type==='success'?'✓':'!'}</div><div><h4 class="toast-message__title">${type==='success'?'Success':'Error'}</h4><p class="toast-message__text">${message}</p></div><button class="toast-message__close" aria-label="Close">×</button></div><div class="progress__bar"></div>`;
+        container.appendChild(toast);
+        toast.querySelector('.toast-message__close').addEventListener('click', ()=> toast.remove());
+        setTimeout(()=> { toast.classList.remove('active'); setTimeout(()=> toast.remove(), 500); }, 4000);
+      }
+
+      function validateEmail(email){ return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email); }
+
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        let valid = true;
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const subject = form.subject.value.trim();
+        const message = form.message.value.trim();
+        const honey = form._honey ? form._honey.value : '';
+
+        document.querySelectorAll('[data-error]').forEach(el=> { el.classList.add('d-none'); el.textContent=''; });
+
+        if(honey){ showToast('Spam detected', 'danger'); return; }
+
+        if(!name){ document.querySelector('[data-error="name"]').textContent='Name is required'; document.querySelector('[data-error="name"]').classList.remove('d-none'); valid=false; }
+        if(!email){ document.querySelector('[data-error="email"]').textContent='Email is required'; document.querySelector('[data-error="email"]').classList.remove('d-none'); valid=false; }
+        else if(!validateEmail(email)){ document.querySelector('[data-error="email"]').textContent='Enter a valid email'; document.querySelector('[data-error="email"]').classList.remove('d-none'); valid=false; }
+        if(!subject){ document.querySelector('[data-error="subject"]').textContent='Subject is required'; document.querySelector('[data-error="subject"]').classList.remove('d-none'); valid=false; }
+        if(!message || message.length<10){ document.querySelector('[data-error="message"]').textContent='Message must be at least 10 characters'; document.querySelector('[data-error="message"]').classList.remove('d-none'); valid=false; }
+
+        if(!valid) { showToast('Please fix form errors', 'danger'); return; }
+
+        btn.disabled = true;
+        btnText.textContent = 'Sending...';
+        btnSpinner.classList.remove('d-none');
+        statusDiv.classList.add('d-none');
+
+        try {
+          // Production: FormSubmit.co AJAX – free, no placeholder, requires one-time activation via email
+          const formData = {
+            name: name,
+            email: email,
+            subject: subject,
+            message: message,
+            _captcha: 'false',
+            _template: 'table',
+            _subject: 'New message from manashbora.vercel.app - ' + subject
+          };
+          const res = await fetch('https://formsubmit.co/ajax/manashjyotibora122@gmail.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(formData)
+          });
+          const data = await res.json().catch(()=> ({}));
+          if(res.ok){
+            statusDiv.textContent = 'Message sent successfully! Thank you, I will reply soon.';
+            statusDiv.className = 'tw-mt-4 text-white tw-text-lg d-block';
+            showToast('Message sent successfully!', 'success');
+            form.reset();
+          } else {
+            // FormSubmit may return activation required on first time
+            if(data && data.message && data.message.toLowerCase().includes('activation')){
+              statusDiv.innerHTML = 'First time activation required – please check manashjyotibora122@gmail.com inbox for activation link from FormSubmit, click it, then resubmit. Or email directly.';
+              statusDiv.className = 'tw-mt-4 text-white tw-text-lg d-block';
+              showToast('Please activate form via email link, then resubmit.', 'info');
+            } else {
+              throw new Error(data.message || 'Failed to send');
+            }
+          }
+        } catch(err){
+          // Fallback to mailto if FormSubmit fails
+          const mailto = `mailto:manashjyotibora122@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nSubject: '+subject+'\n\nMessage:\n'+message+'\n')}`;
+          window.location.href = mailto;
+          statusDiv.textContent = 'Could not auto-send, email client opened as fallback. If not, email directly manashjyotibora122@gmail.com';
+          statusDiv.className = 'tw-mt-4 text-white tw-text-lg d-block';
+          showToast('Fallback to email client.', 'info');
+        } finally {
+          btn.disabled = false;
+          btnText.textContent = 'submit message';
+          btnSpinner.classList.add('d-none');
+        }
+      });
+
+      // Marquee init if needed
+      $(function(){
+        if($('.marquee_left').length){
+          $('.marquee_left').marquee({duration: 15000, gap: 50, delayBeforeStart:0, direction:'left', duplicated:true});
+        }
+      });
+    </script>
+  </body>
+</html>

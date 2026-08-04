@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manashbora.vercel.app/sitemap.xml

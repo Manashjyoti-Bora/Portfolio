@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.env.development
+.env.production
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Keep resume and assets
+!assets/resume/
