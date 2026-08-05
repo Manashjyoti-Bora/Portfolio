@@ -1,21 +1,39 @@
+# Dependencies
 node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
 dist/
+build/
+out/
 .next/
-.vite/
+.nuxt/
 .cache/
-.turbo/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.env.development
+.env.production
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Privacy: Do not include raw uploads, secrets, temp files
+uploads/
+.env
 .vercel/
 .netlify/
-coverage/
-.env
-.env.*
-!.env.example
-.DS_Store
-*.log
-uploads/
-audit_images/
-current_check_images/
-tmp/
-temp/
-*.pem
-*.key
+*.tmp
+*.temp
+audit-scratch/
+comparison/
+
+# Keep resume and assets
+!assets/resume/
