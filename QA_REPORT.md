@@ -16,8 +16,7 @@ Site: https://manashbora.vercel.app/ + local dist
 - LinkedIn → https://www.linkedin.com/in/manashjyoti-bora ✓
 - Instagram → scarrrr_09 ✓
 - Email mailto → manashjyotibora122@gmail.com ✓
-- Phone tel → +91 9365926470 ✓
-- Back to top → #home ✓
+- - Back to top → #home ✓
 - Project cards: NexusMart, DevHire, TaskFlow, Portfolio → GitHub / #home ✓
 - Favicon → assets/images/manash/favicon.png ✓
 - OG image → https://manashbora.vercel.app/assets/images/manash/manash-hero.jpg ✓

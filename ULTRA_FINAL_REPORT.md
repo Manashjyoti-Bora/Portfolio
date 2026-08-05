@@ -185,7 +185,7 @@ All scores >=95/100 – deployable, realistic, no distorted eyes/nose/mouth, no 
 - Apple touch icon: manash-avatar.jpg
 - robots.txt valid: User-agent * Allow / Sitemap vercel.app/sitemap.xml
 - sitemap.xml valid: only homepage, no hash fragments (was 5 URLs with /#about)
-- Schema Person JSON-LD: name, role Creative Developer & Learner, email, phone +91 9365926470, location Nagaon Assam India, GitHub, LinkedIn, Instagram, educational org Dr. B.K.B. College – no batch year
+- Schema Person JSON-LD: name, role Creative Developer & Learner, email, phone , location Nagaon Assam India, GitHub, LinkedIn, Instagram, educational org Dr. B.K.B. College – no batch year
 
 ## Responsive
 

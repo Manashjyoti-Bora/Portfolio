@@ -15,7 +15,6 @@ A premium, production-ready, responsive personal portfolio for **Manashjyoti Bor
 - **Education:** B.Voc IT First Year, Dr. Birinchi Kumar Barooah College (Dr. B.K.B. College), Currently Pursuing
 - **Location:** Nagaon, Assam, India (IST UTC+5:30)
 - **Email:** manashjyotibora122@gmail.com
-- **Phone:** +91 9365926470
 - **GitHub:** https://github.com/Manashjyoti-Bora
 - **LinkedIn:** https://www.linkedin.com/in/manashjyoti-bora
 - **Instagram:** https://www.instagram.com/scarrrr_09?igsh=MWN3NzV0dWlwYXM2eg==
@@ -341,8 +340,7 @@ No fake jobs/certificates. Download buttons link to:
 ## 📞 Contact Manashjyoti
 
 - Email: manashjyotibora122@gmail.com
-- Phone: +91 9365926470
-- GitHub: https://github.com/Manashjyoti-Bora
+- - GitHub: https://github.com/Manashjyoti-Bora
 - LinkedIn: https://www.linkedin.com/in/manashjyoti-bora
 - Instagram: https://www.instagram.com/scarrrr_09
 
